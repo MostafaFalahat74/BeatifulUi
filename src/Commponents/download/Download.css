@@ -1,0 +1,9 @@
+#download{
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#download span{
+    
+}

@@ -1,0 +1,76 @@
+#feature {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 60%;
+}
+
+.feature-title {
+    margin-top: 60px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-title svg {
+    color: red;
+    font-size: 27px;
+}
+
+.feature-title span {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.feature-title p {
+    font-size: 17px;
+}
+
+.feature-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-left {
+    width: 50%;
+}
+
+.feature-right {
+    width: 50%;
+}
+.feature-logo svg{
+color:  red;
+font-size: 37px;
+}
+.feature-item h6{
+    color: dodgerblue;
+    font-size: 16px;
+}
+.feature-item p{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.features-items{
+    position: relative;
+    display: flex;
+
+}
+.features-items .inner-logo{
+    position: absolute;
+     transform:translate(130% ,30%)
+}
+.feature-logo{
+    margin:0px 20px;
+}
+.feature-right {
+    align-items: center;
+}

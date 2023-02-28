@@ -1,0 +1,158 @@
+#header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-right {
+    width: 50%;
+    padding-right: 200px;
+}
+
+.header-right span {
+    display: block;
+    line-height: 22px;
+}
+
+.header-right span:nth-child(1) {
+    font-size: 25px;
+}
+
+.header-right span:nth-child(2) {
+    font-size: 23px;
+}
+
+.header-right span:nth-child(3) {
+    font-size: 20px;
+}
+
+.header-right span:nth-child(4) {
+    font-size: 17px;
+    padding-left: 100px;
+}
+
+.header-left {
+    padding-top: 50px;
+    width: 50%;
+}
+
+img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.header-buttons button {
+    color: white;
+}
+
+.header-buttons button:nth-child(1) {
+    background-color: transparent;
+}
+
+.header-buttons button:nth-child(2) {
+    background-color: orangered;
+    border: none;
+    padding: 7px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-right {
+        padding-right: 100px;
+    }
+
+    .header-right {
+        padding-right: 50px;
+    }
+
+    .mouse-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .header-right span:nth-child(4) {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .header-right span:nth-child(4) {
+        padding-left: 0px;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.mouse-btn {
+    transform: translateX(-20%);
+    -webkit-transform: translateX(-20%);
+    -o-transform:  translateX(-20%);
+    position: absolute;
+    bottom: -60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    animation: shake-mouse  0.7s ease-in infinite alternate  ;
+    -webkit-animation: shake-mouse  0.7s ease-in infinite alternate  ;
+    -o-animation: shake-mouse  0.7s ease-in infinite alternate  ;
+
+}
+
+@keyframes shake-mouse {
+    0% {
+        transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        -o-transform: translateX(-20%);
+    }
+
+    100% {
+        transform: translateX(20%);
+        -webkit-transform: translateX(20%);
+        -o-transform: translateX(-20%);
+    }
+}
+
+
+
+.mouse{
+    transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
+    -moz-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    -o-transform: translateY(-25%);
+    animation: bounce .8s ease infinite alternate;
+    -webkit-animation: bounce .8s ease infinite alternate;
+}
+
+@keyframes bounce {
+    0%{
+         transform: translateY(-25%);
+         -webkit-transform: translateY(-25%);
+         -moz-transform: translateY(-25%);
+         -ms-transform: translateY(-25%);
+         -o-transform: translateY(-25%);
+}
+    100%{
+         transform: translateY(25%);
+         -webkit-transform: translateY(25%);
+         -moz-transform: translateY(25%);
+         -ms-transform: translateY(25%);
+         -o-transform: translateY(25%);
+}
+}
