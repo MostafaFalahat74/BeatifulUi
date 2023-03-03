@@ -1,0 +1,41 @@
+#subscribe{
+    background-image:url('../../assets/subscribe-bg.png') ;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#subscribe h5{
+    padding-top: 40px;
+    font-size: 20px;
+}
+form{
+    padding: 20px 0px;
+}
+form button{
+    border: none;
+    height: 30px;
+    margin-left: 2px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 17px;
+
+}
+form input{
+    border: none;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px; 
+}
+.subscribe-icons{
+    padding: 0px 60px;
+    font-size: 20px;
+}
+.subscribe-icons svg{
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 40px;
+    margin: 10px;
+}
